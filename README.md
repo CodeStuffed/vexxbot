@@ -8,12 +8,13 @@ A static website: how to build the stacker robot, step by step. Plain HTML, no b
 2. In the repository go to **Settings > Pages**. Under **Source** pick **Deploy from a branch**, branch `main`, folder `/ (root)`, then **Save**.
 3. After a minute the site is at `https://<your-user-name>.github.io/<repository-name>/`.
 
-To look at it without GitHub, open `index.html` in a browser. Videos and steps work offline; only the fonts need the internet.
+To look at it without GitHub, run `python -m http.server` in this folder and open http://localhost:8000. The 3D steps need a web server and the internet (they load three.js from a CDN); opening `index.html` straight from disk works for everything else.
 
 ## What's here
 
 - `index.html`: start here: before you start, tools, how to read the steps, cut list, videos
-- `steps/`: the 70 build steps (arrow keys or Back / Next)
+- `build3d/`: animated 3D build steps with the real VEX part models (needs a web server such as GitHub Pages)
+- `steps/`: the same steps as pictures (arrow keys or Back / Next)
 - `parts.html`: every part with counts, for version A and B
 - `media/`: the videos and pictures
 
